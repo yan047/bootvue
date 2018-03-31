@@ -1,0 +1,29 @@
+.link {
+	cursor: pointer;
+	cursor: hand;
+}
+
+.hidden {
+	 display:none;
+}
+
+.bold {
+	 font-weight:bold;
+}
+
+.body-nav>li>a {
+	padding: 6px 12px 6px 12px;
+}
+
+
+div.vis-tooltip {
+	z-index:20;
+}
+
+.vis-label .vis-inner {min-height: 42px;}
+
+.btn-success3 {
+    color: #fff;
+    background-color: #2fb787;
+    border-color: #2aa378;
+}
