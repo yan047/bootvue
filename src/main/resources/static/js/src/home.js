@@ -7,7 +7,7 @@ var vm = new Vue({
 	el: '#app',
 	data: {
 		models:[],
-		showModal: false
+		showModal1: false
 	},
 	mounted:function(){
         this.onLoad();
