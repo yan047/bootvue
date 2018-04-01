@@ -11,16 +11,22 @@
 	</head>
 
 	<body>
-		<nav class="navbar navbar-fixed-top" style="padding:0">
+		<nav class="navbar navbar-dark bg-dark navbar-fixed-top" style="padding:0">
+			<!-- import navbar header -->
 			<div th:replace="header :: header"></div>
 		</nav>
+		
+		<!-- main content -->
 		<div id="app" class="container-fluid" >
 			<div style="height: 13px"></div>
 			<div class="row">
 			</div>
 			<div style="height: 13px"></div>
 		</div>
+		
+		<!-- importing 3rd-party Javascript library -->
 		<div th:replace="jsimport :: imports"></div>
+		<!-- importing Javascript code -->
 		<script type="text/javascript" th:src="@{/js/src/home.js}"></script>
 	</body>
 </html>
