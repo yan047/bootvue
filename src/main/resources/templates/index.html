@@ -24,9 +24,9 @@
 				<div class="col">
 					<button type="button" class="btn  btn-success3" 
 						@click="showModal = true">Start Dialog</button>
-					<modal v-if="showModal" @close="showModal = false">
+					<modal1 v-if="showModal" @close="showModal = false">
     					<h3 slot="header">custom header</h3>
-  					</modal>	
+  					</modal1>	
 				</div>
 				
 			</div>
@@ -35,7 +35,7 @@
 		
 		<!-- modal dialog -->
 	<script type="text/x-template" id="modal-template">
-		  <transition name="modal">
+		  <transition name="modal2">
     		<div class="modal-mask">
       			<div class="modal-wrapper">
         			<div class="modal-container">

@@ -1,5 +1,5 @@
 // register modal component
-Vue.component('modal', {
+Vue.component('modal1', {
   template: '#modal-template'
 })
 
