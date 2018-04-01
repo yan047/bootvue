@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+
+<body>
+	<div th:fragment="template2">
+	<script type="text/x-template" id="modal-template2">
+		  <transition name="modal2">
+    		<div class="modal-mask">
+      			<div class="modal-wrapper">
+        			<div class="modal-container">
+
+          				<div class="modal-header">
+            				<slot name="header">
+              					modal dialog 2
+            				</slot>
+          				</div>
+
+          				<div class="modal-body">
+            				<slot name="body">
+              					template 2
+            				</slot>
+          				</div>
+
+          				<div class="modal-footer">
+            				<slot name="footer">
+              					footer 2
+              					<button class="modal-default-button" @click="$emit('close')">
+                					OK
+              					</button>
+            				</slot>
+          				</div>
+        			</div>
+      			</div>
+    		</div>
+  		</transition>
+	</script>	
+	</div>
+</body>
+
+</html>

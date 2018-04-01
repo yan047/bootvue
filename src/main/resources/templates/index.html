@@ -27,6 +27,11 @@
 					<modal1 v-if="showModal1" @close="showModal1 = false">
     					<h3 slot="header">custom header</h3>
   					</modal1>	
+					<button type="button" class="btn  btn-success3 float-right" style="margin-right: 100px" 
+						@click="showModal2 = true">Dialog 2</button>
+					<modal2 v-if="showModal2" @close="showModal2 = false">
+    					<h3 slot="header">custom header</h3>
+  					</modal2>	
 				</div>
 				
 			</div>
@@ -35,6 +40,8 @@
 		
 		<!-- modal dialog -->
 		<div th:replace="modaltemplate1 :: template1"></div>
+		<div th:replace="modaltemplate2 :: template2"></div>
+		
 	<!-- importing 3rd-party Javascript library -->
 		<div th:replace="jsimport :: imports"></div>
 		<!-- importing Javascript code -->
